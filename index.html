@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container py-5">
+
+        <div class="form-group">
+            <label for="productNameInput">productName :</label>
+            <input class="form-control" type="text" id="productNameInput">
+        </div>
+
+
+        <div class="form-group">
+            <label for="productPriceInput">productPrice :</label>
+            <input class="form-control" type="number" id="productPriceInput">
+        </div>
+
+
+        <div class="form-group">
+            <label for="productCategoryInput">productCategory :</label>
+            <input class="form-control" type="text" id="productCategoryInput">
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="productDescInput">productDescription :</label>
+            <textarea class="form-control" type="text" id="productDescInput"></textarea>
+        </div>
+
+
+        <button id="mainBtn" onclick="" class="btn btn-outline-info">add product</button>
+
+        <div class="container py-4">
+
+            <input onkeyup="searchProduct(this.value)" class="form-control w-75 m-auto" type="text" placeholder="search product">
+
+            <table class="table table-striped text-center mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col ">#</th>
+                        <th scope="col ">Name</th>
+                        <th scope="col ">Price</th>
+                        <th scope="col ">Category</th>
+                        <th scope="col ">Description</th>
+                        <th scope="col ">update</th>
+                        <th scope="col ">Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="rows">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
+
+</html>
